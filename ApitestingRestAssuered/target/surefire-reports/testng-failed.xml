@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.restassured.utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.restassured.testcases.TC002_Get_Single_empolyees">
+        <methods>
+          <include name="getSingleempolyee"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="checkresponceBody"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC002_Get_Single_empolyees -->
+      <class name="com.restassured.testcases.TC005_DELETE_Empolyees_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC005_DELETE_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC003_Post_Empolyees_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC003_Post_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC004_put_Empolyees_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC004_put_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC001_Get_ALLempolyees">
+        <methods>
+          <include name="getAllempolyee"/>
+          <include name="checkcontent_Length"/>
+          <include name="checkresponceTime"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="checkCookies"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC001_Get_ALLempolyees -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

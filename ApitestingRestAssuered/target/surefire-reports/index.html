@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\RameshShoft_Ramu\ApitestingRestAssuered\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">40 methods, 7 failed,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkCookies">checkCookies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkcontent_Length">checkcontent_Length</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkresponceBody">checkresponceBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkresponceTime">checkresponceTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="UpdateEmployee">UpdateEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkContent_Type">checkContent_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkContent_Type">checkContent_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkContent_Type">checkContent_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkContent_Type">checkContent_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkContent_Type">checkContent_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkServer_Type">checkServer_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkServer_Type">checkServer_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkServer_Type">checkServer_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkServer_Type">checkServer_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkServer_Type">checkServer_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkStatusLine">checkStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusLine">checkStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusLine">checkStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkStatusLine">checkStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkStatusLine">checkStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkcontent_Encoding">checkcontent_Encoding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkcontent_Length">checkcontent_Length</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkcontent_Length">checkcontent_Length</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkcontent_Length">checkcontent_Length</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkcontent_Length">checkcontent_Length</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC001_Get_ALLempolyees" class="method navigator-link" hash-for-method="checkresponceBody">checkresponceBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="checkresponceTime">checkresponceTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC002_Get_Single_empolyees" class="method navigator-link" hash-for-method="checkresponceTime">checkresponceTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC004_put_Empolyees_Record" class="method navigator-link" hash-for-method="checkresponceTime">checkresponceTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="checkresponceTime">checkresponceTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC003_Post_Empolyees_Record" class="method navigator-link" hash-for-method="createEmployee">createEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.restassured.testcases.TC005_DELETE_Empolyees_Record" class="method navigator-link" hash-for-method="deleteEmployee">deleteEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.testcases.TC005_DELETE_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody(TC005_DELETE_Empolyees_Record.java:41)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.testcases.TC002_Get_Single_empolyees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceBody">
+                  </a> <!-- checkresponceBody -->
+                  <span class="method-name">checkresponceBody</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody(TC002_Get_Single_empolyees.java:28)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.testcases.TC003_Post_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody(TC003_Post_Empolyees_Record.java:44)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.testcases.TC004_put_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody(TC004_put_Empolyees_Record.java:44)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.testcases.TC001_Get_ALLempolyees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCookies">
+                  </a> <!-- checkCookies -->
+                  <span class="method-name">checkCookies</span>
+                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;null&gt; but was:&lt;d2a7ab80-f7be-44cc-589e-576e3bbdab82&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies(TC001_Get_ALLempolyees.java:99)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Length">
+                  </a> <!-- checkcontent_Length -->
+                  <span class="method-name">checkcontent_Length</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length(TC001_Get_ALLempolyees.java:90)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceTime">
+                  </a> <!-- checkresponceTime -->
+                  <span class="method-name">checkresponceTime</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime(TC001_Get_ALLempolyees.java:45)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.restassured.testcases.TC005_DELETE_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContent_Type">
+                  </a> <!-- checkContent_Type -->
+                  <span class="method-name">checkContent_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServer_Type">
+                  </a> <!-- checkServer_Type -->
+                  <span class="method-name">checkServer_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLine">
+                  </a> <!-- checkStatusLine -->
+                  <span class="method-name">checkStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Length">
+                  </a> <!-- checkcontent_Length -->
+                  <span class="method-name">checkcontent_Length</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceTime">
+                  </a> <!-- checkresponceTime -->
+                  <span class="method-name">checkresponceTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteEmployee">
+                  </a> <!-- deleteEmployee -->
+                  <span class="method-name">deleteEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.restassured.testcases.TC002_Get_Single_empolyees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContent_Type">
+                  </a> <!-- checkContent_Type -->
+                  <span class="method-name">checkContent_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServer_Type">
+                  </a> <!-- checkServer_Type -->
+                  <span class="method-name">checkServer_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLine">
+                  </a> <!-- checkStatusLine -->
+                  <span class="method-name">checkStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Length">
+                  </a> <!-- checkcontent_Length -->
+                  <span class="method-name">checkcontent_Length</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceTime">
+                  </a> <!-- checkresponceTime -->
+                  <span class="method-name">checkresponceTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.restassured.testcases.TC003_Post_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContent_Type">
+                  </a> <!-- checkContent_Type -->
+                  <span class="method-name">checkContent_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServer_Type">
+                  </a> <!-- checkServer_Type -->
+                  <span class="method-name">checkServer_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLine">
+                  </a> <!-- checkStatusLine -->
+                  <span class="method-name">checkStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Length">
+                  </a> <!-- checkcontent_Length -->
+                  <span class="method-name">checkcontent_Length</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceTime">
+                  </a> <!-- checkresponceTime -->
+                  <span class="method-name">checkresponceTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createEmployee">
+                  </a> <!-- createEmployee -->
+                  <span class="method-name">createEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.restassured.testcases.TC004_put_Empolyees_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateEmployee">
+                  </a> <!-- UpdateEmployee -->
+                  <span class="method-name">UpdateEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContent_Type">
+                  </a> <!-- checkContent_Type -->
+                  <span class="method-name">checkContent_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServer_Type">
+                  </a> <!-- checkServer_Type -->
+                  <span class="method-name">checkServer_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLine">
+                  </a> <!-- checkStatusLine -->
+                  <span class="method-name">checkStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Length">
+                  </a> <!-- checkcontent_Length -->
+                  <span class="method-name">checkcontent_Length</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceTime">
+                  </a> <!-- checkresponceTime -->
+                  <span class="method-name">checkresponceTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.restassured.testcases.TC001_Get_ALLempolyees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContent_Type">
+                  </a> <!-- checkContent_Type -->
+                  <span class="method-name">checkContent_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServer_Type">
+                  </a> <!-- checkServer_Type -->
+                  <span class="method-name">checkServer_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLine">
+                  </a> <!-- checkStatusLine -->
+                  <span class="method-name">checkStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkcontent_Encoding">
+                  </a> <!-- checkcontent_Encoding -->
+                  <span class="method-name">checkcontent_Encoding</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkresponceBody">
+                  </a> <!-- checkresponceBody -->
+                  <span class="method-name">checkresponceBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\RameshShoft_Ramu\ApitestingRestAssuered\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.restassured.utilities.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.restassured.testcases.TC001_Get_ALLempolyees&quot;/&gt;
+      &lt;class name=&quot;com.restassured.testcases.TC002_Get_Single_empolyees&quot;/&gt;
+      &lt;class name=&quot;com.restassured.testcases.TC004_put_Empolyees_Record&quot;/&gt;
+      &lt;class name=&quot;com.restassured.testcases.TC005_DELETE_Empolyees_Record&quot;/&gt;
+      &lt;class name=&quot;com.restassured.testcases.TC003_Post_Empolyees_Record&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(40);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deleteEmployee')
+data.setCell(0, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(0, 3, 7387);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createEmployee')
+data.setCell(1, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(1, 3, 5972);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UpdateEmployee')
+data.setCell(2, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(2, 3, 5781);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkresponceBody')
+data.setCell(3, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(3, 3, 32);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkServer_Type')
+data.setCell(4, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(4, 3, 18);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkContent_Type')
+data.setCell(5, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(5, 3, 6);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkContent_Type')
+data.setCell(6, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkcontent_Length')
+data.setCell(7, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkStatusCode')
+data.setCell(8, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkStatusCode')
+data.setCell(9, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkresponceBody')
+data.setCell(10, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkCookies')
+data.setCell(11, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkresponceTime')
+data.setCell(12, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkStatusLine')
+data.setCell(13, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkresponceTime')
+data.setCell(14, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkcontent_Length')
+data.setCell(15, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkServer_Type')
+data.setCell(16, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkStatusLine')
+data.setCell(17, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkcontent_Encoding')
+data.setCell(18, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkStatusCode')
+data.setCell(19, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'checkServer_Type')
+data.setCell(20, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkStatusCode')
+data.setCell(21, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkresponceTime')
+data.setCell(22, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'checkContent_Type')
+data.setCell(23, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'checkContent_Type')
+data.setCell(24, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'checkServer_Type')
+data.setCell(25, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'checkResponseBody')
+data.setCell(26, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'checkResponseBody')
+data.setCell(27, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkcontent_Length')
+data.setCell(28, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'checkresponceTime')
+data.setCell(29, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'checkStatusLine')
+data.setCell(30, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'checkServer_Type')
+data.setCell(31, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'checkresponceTime')
+data.setCell(32, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'checkcontent_Length')
+data.setCell(33, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'checkContent_Type')
+data.setCell(34, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'checkStatusLine')
+data.setCell(35, 2, 'com.restassured.testcases.TC005_DELETE_Empolyees_Record')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkStatusCode')
+data.setCell(36, 2, 'com.restassured.testcases.TC001_Get_ALLempolyees')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkcontent_Length')
+data.setCell(37, 2, 'com.restassured.testcases.TC004_put_Empolyees_Record')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'checkStatusLine')
+data.setCell(38, 2, 'com.restassured.testcases.TC002_Get_Single_empolyees')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkResponseBody')
+data.setCell(39, 2, 'com.restassured.testcases.TC003_Post_Empolyees_Record')
+data.setCell(39, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.testcases.TC001_Get_ALLempolyees</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getAllempolyee</span>
+                <span class="method-start">734 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContent_Type</span>
+                <span class="method-start">4589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkCookies</span>
+                <span class="method-start">4676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServer_Type</span>
+                <span class="method-start">4706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">4709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLine</span>
+                <span class="method-start">4711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkcontent_Encoding</span>
+                <span class="method-start">4714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkcontent_Length</span>
+                <span class="method-start">4716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkresponceBody</span>
+                <span class="method-start">4720 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkresponceTime</span>
+                <span class="method-start">4753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4755 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.testcases.TC002_Get_Single_empolyees</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4757 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getSingleempolyee</span>
+                <span class="method-start">4758 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContent_Type</span>
+                <span class="method-start">9183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServer_Type</span>
+                <span class="method-start">9186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">9192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLine</span>
+                <span class="method-start">9196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkcontent_Length</span>
+                <span class="method-start">9199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkresponceBody</span>
+                <span class="method-start">9204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkresponceTime</span>
+                <span class="method-start">9210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9212 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.testcases.TC004_put_Empolyees_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9214 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">UpdateEmployee</span>
+                <span class="method-start">9214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkContent_Type</span>
+                <span class="method-start">14996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">15003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServer_Type</span>
+                <span class="method-start">15009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">15013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLine</span>
+                <span class="method-start">15017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkcontent_Length</span>
+                <span class="method-start">15020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkresponceTime</span>
+                <span class="method-start">15023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15025 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.testcases.TC005_DELETE_Empolyees_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15028 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContent_Type</span>
+                <span class="method-start">15029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">15032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServer_Type</span>
+                <span class="method-start">15034 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">15054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLine</span>
+                <span class="method-start">15056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkcontent_Length</span>
+                <span class="method-start">15057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkresponceTime</span>
+                <span class="method-start">15057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteEmployee</span>
+                <span class="method-start">15058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22446 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.testcases.TC003_Post_Empolyees_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">22449 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContent_Type</span>
+                <span class="method-start">22449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">22452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServer_Type</span>
+                <span class="method-start">22455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">22457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLine</span>
+                <span class="method-start">22460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkcontent_Length</span>
+                <span class="method-start">22461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkresponceTime</span>
+                <span class="method-start">22464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createEmployee</span>
+                <span class="method-start">22467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28440 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

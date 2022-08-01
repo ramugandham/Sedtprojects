@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 32.221 s <<< FAILURE! - in TestSuite
+com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies  Time elapsed: 0.03 s  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<null> but was:<d2a7ab80-f7be-44cc-589e-576e3bbdab82>
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies(TC001_Get_ALLempolyees.java:99)
+
+com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length  Time elapsed: 0.002 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length(TC001_Get_ALLempolyees.java:90)
+
+com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime  Time elapsed: 0.001 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime(TC001_Get_ALLempolyees.java:45)
+
+com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody  Time elapsed: 0.003 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody(TC002_Get_Single_empolyees.java:28)
+
+com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody(TC004_put_Empolyees_Record.java:44)
+
+com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody(TC005_DELETE_Empolyees_Record.java:41)
+
+com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody(TC003_Post_Empolyees_Record.java:44)
+

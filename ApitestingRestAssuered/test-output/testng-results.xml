@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="40" passed="33" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-01T13:46:42 IST" name="Suite" finished-at="2022-08-01T13:47:21 IST" duration-ms="38525">
+    <groups>
+    </groups>
+    <test started-at="2022-08-01T13:46:42 IST" name="Test" finished-at="2022-08-01T13:47:21 IST" duration-ms="38525">
+      <class name="com.restassured.testcases.TC004_put_Empolyees_Record">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:46:58 IST" name="setUp" finished-at="2022-08-01T13:46:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UpdateEmployee()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:46:58 IST" name="UpdateEmployee" finished-at="2022-08-01T13:47:04 IST" duration-ms="5867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateEmployee -->
+        <test-method signature="checkContent_Type()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkContent_Type" finished-at="2022-08-01T13:47:04 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContent_Type -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkResponseBody" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null
+at com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody(TC004_put_Empolyees_Record.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkServer_Type()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkServer_Type" finished-at="2022-08-01T13:47:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServer_Type -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkStatusCode" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkStatusLine" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="checkcontent_Length()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkcontent_Length" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Length -->
+        <test-method signature="checkresponceTime()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="checkresponceTime" finished-at="2022-08-01T13:47:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceTime -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.testcases.TC004_put_Empolyees_Record@383bfa16]" started-at="2022-08-01T13:47:04 IST" name="tearDown" finished-at="2022-08-01T13:47:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.restassured.testcases.TC004_put_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC002_Get_Single_empolyees">
+        <test-method is-config="true" signature="getSingleempolyee()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:53 IST" name="getSingleempolyee" finished-at="2022-08-01T13:46:58 IST" duration-ms="5475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleempolyee -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:53 IST" name="setUp" finished-at="2022-08-01T13:46:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkContent_Type()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkContent_Type" finished-at="2022-08-01T13:46:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContent_Type -->
+        <test-method signature="checkServer_Type()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkServer_Type" finished-at="2022-08-01T13:46:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServer_Type -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkStatusCode" finished-at="2022-08-01T13:46:58 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkStatusLine" finished-at="2022-08-01T13:46:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="checkcontent_Length()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkcontent_Length" finished-at="2022-08-01T13:46:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Length -->
+        <test-method signature="checkresponceBody()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkresponceBody" finished-at="2022-08-01T13:46:58 IST" duration-ms="2" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<true>
+at junit.framework.Assert.fail(Assert.java:50)
+at junit.framework.Assert.failNotEquals(Assert.java:287)
+at junit.framework.Assert.assertEquals(Assert.java:67)
+at junit.framework.Assert.assertEquals(Assert.java:147)
+at junit.framework.Assert.assertEquals(Assert.java:153)
+at com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody(TC002_Get_Single_empolyees.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceBody -->
+        <test-method signature="checkresponceTime()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="checkresponceTime" finished-at="2022-08-01T13:46:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceTime -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.testcases.TC002_Get_Single_empolyees@5fbdfdcf]" started-at="2022-08-01T13:46:58 IST" name="tearDown" finished-at="2022-08-01T13:46:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.restassured.testcases.TC002_Get_Single_empolyees -->
+      <class name="com.restassured.testcases.TC001_Get_ALLempolyees">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:43 IST" name="setUp" finished-at="2022-08-01T13:46:43 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getAllempolyee()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:43 IST" name="getAllempolyee" finished-at="2022-08-01T13:46:52 IST" duration-ms="9044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllempolyee -->
+        <test-method signature="checkContent_Type()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkContent_Type" finished-at="2022-08-01T13:46:52 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContent_Type -->
+        <test-method signature="checkCookies()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkCookies" finished-at="2022-08-01T13:46:52 IST" duration-ms="2" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<null> but was:<d2a7ab80-f7be-44cc-589e-576e3bbdab82>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<null> but was:<d2a7ab80-f7be-44cc-589e-576e3bbdab82>
+at junit.framework.Assert.assertEquals(Assert.java:85)
+at junit.framework.Assert.assertEquals(Assert.java:91)
+at com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies(TC001_Get_ALLempolyees.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCookies -->
+        <test-method signature="checkServer_Type()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkServer_Type" finished-at="2022-08-01T13:46:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServer_Type -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkStatusCode" finished-at="2022-08-01T13:46:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkStatusLine" finished-at="2022-08-01T13:46:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="checkcontent_Encoding()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkcontent_Encoding" finished-at="2022-08-01T13:46:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Encoding -->
+        <test-method signature="checkcontent_Length()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkcontent_Length" finished-at="2022-08-01T13:46:52 IST" duration-ms="2" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:48)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length(TC001_Get_ALLempolyees.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Length -->
+        <test-method signature="checkresponceBody()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkresponceBody" finished-at="2022-08-01T13:46:52 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceBody -->
+        <test-method signature="checkresponceTime()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:52 IST" name="checkresponceTime" finished-at="2022-08-01T13:46:52 IST" duration-ms="3" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:48)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime(TC001_Get_ALLempolyees.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceTime -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.testcases.TC001_Get_ALLempolyees@67c33749]" started-at="2022-08-01T13:46:53 IST" name="tearDown" finished-at="2022-08-01T13:46:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.restassured.testcases.TC001_Get_ALLempolyees -->
+      <class name="com.restassured.testcases.TC005_DELETE_Empolyees_Record">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="setUp" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkContent_Type()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkContent_Type" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContent_Type -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkResponseBody" finished-at="2022-08-01T13:47:04 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null
+at com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody(TC005_DELETE_Empolyees_Record.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkServer_Type()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkServer_Type" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServer_Type -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkStatusCode" finished-at="2022-08-01T13:47:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkStatusLine" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="checkcontent_Length()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkcontent_Length" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Length -->
+        <test-method signature="checkresponceTime()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="checkresponceTime" finished-at="2022-08-01T13:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceTime -->
+        <test-method signature="deleteEmployee()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:04 IST" name="deleteEmployee" finished-at="2022-08-01T13:47:11 IST" duration-ms="7271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.testcases.TC005_DELETE_Empolyees_Record@4d465b11]" started-at="2022-08-01T13:47:11 IST" name="tearDown" finished-at="2022-08-01T13:47:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.restassured.testcases.TC005_DELETE_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC003_Post_Empolyees_Record">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="setUp" finished-at="2022-08-01T13:47:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkContent_Type()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkContent_Type" finished-at="2022-08-01T13:47:11 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContent_Type -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkResponseBody" finished-at="2022-08-01T13:47:11 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null
+at com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody(TC003_Post_Empolyees_Record.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkServer_Type()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkServer_Type" finished-at="2022-08-01T13:47:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServer_Type -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkStatusCode" finished-at="2022-08-01T13:47:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkStatusLine" finished-at="2022-08-01T13:47:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="checkcontent_Length()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkcontent_Length" finished-at="2022-08-01T13:47:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontent_Length -->
+        <test-method signature="checkresponceTime()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="checkresponceTime" finished-at="2022-08-01T13:47:11 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresponceTime -->
+        <test-method signature="createEmployee()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:11 IST" name="createEmployee" finished-at="2022-08-01T13:47:21 IST" duration-ms="9702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.testcases.TC003_Post_Empolyees_Record@53fdffa1]" started-at="2022-08-01T13:47:21 IST" name="tearDown" finished-at="2022-08-01T13:47:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.restassured.testcases.TC003_Post_Empolyees_Record -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

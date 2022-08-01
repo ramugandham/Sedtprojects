@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.restassured.utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.restassured.testcases.TC001_Get_ALLempolyees">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getAllempolyee"/>
+          <include name="checkCookies"/>
+          <include name="checkresponceTime"/>
+          <include name="checkcontent_Length"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC001_Get_ALLempolyees -->
+      <class name="com.restassured.testcases.TC003_Post_Empolyees_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC003_Post_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC005_DELETE_Empolyees_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC005_DELETE_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC004_put_Empolyees_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC004_put_Empolyees_Record -->
+      <class name="com.restassured.testcases.TC002_Get_Single_empolyees">
+        <methods>
+          <include name="getSingleempolyee"/>
+          <include name="checkresponceBody"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.TC002_Get_Single_empolyees -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

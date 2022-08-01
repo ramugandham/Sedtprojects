@@ -1,0 +1,551 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 01 19:11:40 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>28 seconds (28796 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies()'><b>checkCookies</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;null&gt; but was:&lt;d2a7ab80-f7be-44cc-589e-576e3bbdab82&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies(TC001_Get_ALLempolyees.java:99)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589640004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589640004'><pre>junit.framework.ComparisonFailure: expected:&lt;null&gt; but was:&lt;d2a7ab80-f7be-44cc-589e-576e3bbdab82&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkCookies(TC001_Get_ALLempolyees.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody(TC004_put_Empolyees_Record.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174641185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174641185'><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC004_put_Empolyees_Record.checkResponseBody(TC004_put_Empolyees_Record.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody(TC005_DELETE_Empolyees_Record.java:41)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1829496747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829496747'><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkResponseBody(TC005_DELETE_Empolyees_Record.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody(TC003_Post_Empolyees_Record.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696136701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696136701'><pre>java.lang.NullPointerException
+	at com.restassured.testcases.TC003_Post_Empolyees_Record.checkResponseBody(TC003_Post_Empolyees_Record.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length()'><b>checkcontent_Length</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length(TC001_Get_ALLempolyees.java:90)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1591398176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1591398176'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Length(TC001_Get_ALLempolyees.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody()'><b>checkresponceBody</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td><div><pre>junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody(TC002_Get_Single_empolyees.java:28)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace535687332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace535687332'><pre>junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceBody(TC002_Get_Single_empolyees.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime()'><b>checkresponceTime</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime(TC001_Get_ALLempolyees.java:45)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1494158416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1494158416'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceTime(TC001_Get_ALLempolyees.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.UpdateEmployee()'><b>UpdateEmployee</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>5</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkContent_Type()'><b>checkContent_Type</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkContent_Type()'><b>checkContent_Type</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkContent_Type()'><b>checkContent_Type</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkContent_Type()'><b>checkContent_Type</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkContent_Type()'><b>checkContent_Type</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkServer_Type()'><b>checkServer_Type</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkServer_Type()'><b>checkServer_Type</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkServer_Type()'><b>checkServer_Type</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkServer_Type()'><b>checkServer_Type</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkServer_Type()'><b>checkServer_Type</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkcontent_Encoding()'><b>checkcontent_Encoding</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkcontent_Length()'><b>checkcontent_Length</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkcontent_Length()'><b>checkcontent_Length</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkcontent_Length()'><b>checkcontent_Length</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkcontent_Length()'><b>checkcontent_Length</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC001_Get_ALLempolyees.checkresponceBody()'><b>checkresponceBody</b><br>Test class: com.restassured.testcases.TC001_Get_ALLempolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC001_Get_ALLempolyees@5170bcf4</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC002_Get_Single_empolyees.checkresponceTime()'><b>checkresponceTime</b><br>Test class: com.restassured.testcases.TC002_Get_Single_empolyees</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC002_Get_Single_empolyees@2812b107</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC004_put_Empolyees_Record.checkresponceTime()'><b>checkresponceTime</b><br>Test class: com.restassured.testcases.TC004_put_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC004_put_Empolyees_Record@df6620a</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.checkresponceTime()'><b>checkresponceTime</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.checkresponceTime()'><b>checkresponceTime</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>0</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC003_Post_Empolyees_Record.createEmployee()'><b>createEmployee</b><br>Test class: com.restassured.testcases.TC003_Post_Empolyees_Record</td>
+<td></td>
+<td>5</td>
+<td>com.restassured.testcases.TC003_Post_Empolyees_Record@1a72a540</td></tr>
+<tr>
+<td title='com.restassured.testcases.TC005_DELETE_Empolyees_Record.deleteEmployee()'><b>deleteEmployee</b><br>Test class: com.restassured.testcases.TC005_DELETE_Empolyees_Record</td>
+<td></td>
+<td>7</td>
+<td>com.restassured.testcases.TC005_DELETE_Empolyees_Record@4e31276e</td></tr>
+</table><p>
+</body>
+</html>
